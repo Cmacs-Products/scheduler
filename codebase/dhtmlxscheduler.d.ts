@@ -1,4 +1,4 @@
-// Type definitions for dhtmlxScheduler 5.3.5
+// Type definitions for dhtmlxScheduler 5.3.11
 // Project: http://dhtmlx.com/docs/products/dhtmlxScheduler
 
 type SchedulerCallback = (...args: any[]) => any;
@@ -432,6 +432,13 @@ export interface SchedulerTemplates {
 	timeline_date(date1: Date, date2: Date): string;
 
 	/**
+	 * specifies the CSS class that will be applied to a row of the Timeline view
+	 * @param section the section object
+	 * @param timeline the timeline object
+	*/
+	timeline_row_class(section: any, timeline: any): string;
+
+	/**
 	 * specifies items of the X-Axis
 	 * @param date the date which needs formatting
 	*/
@@ -469,6 +476,8 @@ export interface SchedulerTemplates {
 	 * @param date the date which needs formatting
 	*/
 	xml_format(date: Date): string;
+
+	[customTemplate: string]: any;
 }
 
 export interface SchedulerConfigOptions {
@@ -1049,6 +1058,11 @@ export interface SchedulerConfigOptions {
 	wai_aria_attributes: boolean;
 
 	/**
+	 * highlights the selected event in the Week Agenda view
+	*/
+	week_agenda_select: boolean;
+
+	/**
 	 * sets the format of the date in the sub-header of the Month view
 	*/
 	week_date: string;
@@ -1072,6 +1086,8 @@ export interface SchedulerConfigOptions {
 	 * sets the number of columns in the Year view
 	*/
 	year_y: number;
+
+	[customConfig: string]: any;
 }
 
 export interface SchedulerDateHelpers {
@@ -1089,6 +1105,7 @@ export interface SchedulerDateHelpers {
 	str_to_date(format: string): any;
 	convert_to_utc(origin: Date): Date;
 	to_fixed(value: number): string;
+	[customMethod: string]: any;
 }
 
 export interface SchedulerHotkeys {
@@ -1167,6 +1184,7 @@ export interface SchedulerLocaleLabels {
 	repeat_radio_end3: string;
 	month_for_recurring: string[];
 	day_for_recurring: string[];
+	[customLabel: string]: any;
 }
 
 export interface SchedulerLocale {

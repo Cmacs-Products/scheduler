@@ -1,7 +1,7 @@
 DHTMLX Scheduler
 ============
 
-Version 5.3.11, Standard Edition
+Version 5.3.5, Stardard Edition
 
 License
 ------------

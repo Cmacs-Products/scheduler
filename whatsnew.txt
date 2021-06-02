@@ -1,48 +1,3 @@
-### 5.3.11
-
-- Fix the script error occurred when changing dates in the scheduler when the Cookie extension is enabled
-- Fix the incorrect value of the Content-Type header when the transaction mode of dataProcessor is set to "JSON"
-- CSS corrections for the Lightbox on mobile devices when the Terrace skin is used
-- Fix issues with recurring events that caused some events to transfer to the next month when the target month doesn't have the appropriate date and "monthly" recurrence is used
-- Fix the issue that caused the modal overlay to stay visible after the Lightbox was closed via calling scheduler.updateCollection()
-- The onBeforeEventPasted API event is added in order to allow validation or modifying the position of the pasted event
-- New recurring_overflow_instances configuration option is added
-
-### 5.3.10
-
-- Fix the incorrect work of column_width when some units are hidden
-- Fix touch support on iPad on Safari
-- Fix the incorrect work of the onDblClick and onClick events when handling false result in Grid view
-- Fix the incorrect work of drag and drop in Timeline view which caused events to move to the next section after clicking on the bottom border of the event bar
-
-### 5.3.9
-
-- Fix the incorrect display of a scrollable timeline after scrolling it down and dragging and dropping the last row
-- Fix the incorrect display of events which happened after switching between two scrollable timelines
-- Fix script error that fired when a timeline was scrolled on touch devices
-- Fix the incorrect Content-Type of POST/PUT/DELETE requests sent by dataProcessor when custom headers are specified
-- The timeline_row_class template for CSS class of a timeline row is added
-
-### 5.3.8
-
-- Fix the incorrect height of the modal overlay of the Lightbox
-- Fix the incorrect sizes of the scheduler when the scheduler is initialized inside Bootstrap modals
-- Scheduler now automatically tracks the container resizes and adjusts its own sizes accordingly
-- Add Mini Calendar control for the header config
-
-### 5.3.7
-
-- Fix incorrect work of Container Autoresize extension with the scrollable timeline
-- Fix the incorrect work of show_unassigned option of the Timeline view
-
-### 5.3.6
-
-- Fix the incorrect displaying of events in the Day Timeline view when scrollable:true or smart_rendering:true is used
-- Fix the script error which happened in the Day Timeline view after dragging a new event when scrollable:true was used together with dataProcessor
-- Fix the script error which was thrown if no date element was included in the header config
-- Fix styling of the day tab in the Material skin when the header config does not contain a week or month tab
-
-
 ### 5.3.5
 
 - Fix styling of the 'next' button on the right side of the navigation panel in Terrace skin when the scheduler is initialized using header config
@@ -284,28 +239,28 @@
 
 ### 3.0
 
-- Version of scheduler for touch phones
-- WeekAgenda view
-- Netbook friendly lightbox form
-- Cascade event display
+- Version of scheduler for touch phones 
+- WeekAgenda view 
+- Netbook friendly lightbox form 
+- Cascade event display 
 - Simple way to define a color for event
 - Drag and drop of the details form
-- Custom buttons for the details form
+- Custom buttons for the details form 
 - Current time marker in day and week view
 - Multiline header for timeline view
-- Configurable work-time bounds
-- API to access lightbox values
+- Configurable work-time bounds 
+- API to access lightbox values 
 
-### 2.3
+### 2.3 
 
-- Map view was added
-- Cell mode for Timeline view was added
-- Tree mode for Timeline view was added
+- Map view was added 
+- Cell mode for Timeline view was added 
+- Tree mode for Timeline view was added 
 - Tooltips for all views were added
 - Abbility to create new events by double click or by drag-and-drop in Timeline mode
 - Abbility to move events by drop-and-drag in Timeline mode
-- Abbility to create new events by external drag and drop
-- Multiselect section for details form
-- Checkbox, combo, radio - sections for details form
-- Api of mini-calendar extension extended
+- Abbility to create new events by external drag and drop 
+- Multiselect section for details form 
+- Checkbox, combo, radio - sections for details form 
+- Api of mini-calendar extension extended 
 - Custom form implementation simplified

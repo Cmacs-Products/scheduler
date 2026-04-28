@@ -1,13 +1,28 @@
 DHTMLX Scheduler
 ============
 
-Version 5.3.5, Stardard Edition
+Version 7.2.13, Professional Edition
 
 License
 ------------
 
-GPL-2.0 License, check license.txt for more details
+Commercial License, check license.txt for more details
 
+How to install using npm/yarn
+------------
+
+Professional Evaluation version:
+
+- npm config set @dhx:registry=https://npm.dhtmlx.com
+- npm install @dhx/trial-scheduler
+
+Professional version:
+
+Generate your login and password for private npm in your Client's Area: https://dhtmlx.com/clients/
+
+- npm config set @dhx:registry=https://npm.dhtmlx.com
+- npm login --registry=https://npm.dhtmlx.com --scope=@dhx --auth-type=legacy
+- npm install @dhx/scheduler
 
 How to start
 ------------
